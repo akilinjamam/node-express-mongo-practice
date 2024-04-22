@@ -15,6 +15,7 @@ app.use(express.json());
 app.use(passport.initialize());
 require('./config/passport');
 
+
 // home route
 app.get('/', (req, res) => {
     res.status(200).send('<h1>welcome to new server with jwt</h1>')
